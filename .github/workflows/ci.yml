@@ -1,0 +1,20 @@
+name: CI - Calculator
+
+on:
+  pull_request:
+    branches: [ master, main ]
+  push:
+    branches: [ master, main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sanity check
+        run: |
+          echo "Listing project files..."
+          ls -la
+          test -f index.html && test -f style.css && test -f script.js
