@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora • Pro</title>
+    <meta name="description"
+        content="Calculadora profissional em HTML, CSS e JS com suporte a teclado e acessibilidade." />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="calc" role="application" aria-label="Calculadora">
+        <span class="brand">Calc Pro</span>
+        <section class="screen" aria-live="polite">
+            <div class="history" id="history" aria-hidden="true"></div>
+            <div class="value" id="display">0</div>
+        </section>
+
+        <section class="grid" aria-label="Teclado da calculadora">
+            <button class="btn-fn" data-action="clear-entry" aria-label="Limpar entrada (CE)">CE</button>
+            <button class="btn-fn btn-danger" data-action="clear-all" aria-label="Limpar tudo (AC)">AC</button>
+            <button class="btn-fn" data-action="backspace" aria-label="Apagar (Backspace)">⌫</button>
+            <button class="btn-op" data-op="/" aria-label="Dividir">÷</button>
+
+            <button data-num>7</button>
+            <button data-num>8</button>
+            <button data-num>9</button>
+            <button class="btn-op" data-op="*" aria-label="Multiplicar">×</button>
+
+            <button data-num>4</button>
+            <button data-num>5</button>
+            <button data-num>6</button>
+            <button class="btn-op" data-op="-" aria-label="Subtrair">−</button>
+
+            <button data-num>1</button>
+            <button data-num>2</button>
+            <button data-num>3</button>
+            <button class="btn-op" data-op="+" aria-label="Somar">+</button>
+
+            <button class="btn-fn" data-action="percent" aria-label="Porcentagem">%</button>
+            <button data-num>0</button>
+            <button class="btn-fn" data-action="decimal" aria-label="Decimal">,</button>
+            <button class="btn-eq" data-action="equals" aria-label="Igual">=</button>
+
+            <button class="span-2 btn-fn" data-action="sign" aria-label="Trocar sinal">±</button>
+            <button class="span-2 btn-fn" data-action="copy" aria-label="Copiar resultado">Copiar</button>
+        </section>
+
+        <div class="footer">
+            <div>Suporte a teclado: <span class="kbd">0–9</span> <span class="kbd">+ - * /</span> <span class="kbd">,
+                    .</span> <span class="kbd">Enter</span> <span class="kbd">Backspace</span> <span
+                    class="kbd">%</span></div>
+            <div id="toast" aria-live="polite"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
