@@ -14,8 +14,9 @@ It is part of a Cloud Computing course assignment to demonstrate the setup of a 
 ---
 
 ## 🚀 Live Demo
-(Enable **GitHub Pages** in `Settings → Pages` and paste the link here)  
-👉 Example: `https://username.github.io/PipelineCI-CD-Calculator/`
+After enabling **GitHub Pages** in `Settings → Pages`, the app can be accessed at:  
+
+👉 [PipelineCI-CD-Calculator - GitHub Pages](https://jackson-ramos.github.io/PipelineCI-CD-Calculator/)  
 
 ---
 
@@ -26,7 +27,6 @@ It is part of a Cloud Computing course assignment to demonstrate the setup of a 
 └── .github/
 └── workflows/
 └── ci.yml # GitHub Actions workflow
-
 
 
 ---
